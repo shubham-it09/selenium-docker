@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Book Flight1" parallel="tests" thread-count="4">
+
+    <test name="Book flight3">
+        <parameter name = "noOfPass" value="3" />
+        <classes>
+            <class name = "com.newtours.tests.BookFlightTest">
+
+            </class>
+        </classes>
+    </test>
+
+    <test name="Book flight4">
+        <parameter name = "noOfPass" value="4" />
+        <classes>
+            <class name = "com.newtours.tests.BookFlightTest">
+
+            </class>
+        </classes>
+    </test>
+
+
+
+
+</suite>

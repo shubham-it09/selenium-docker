@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+    hub:
+       image: selenium/hub:3.141.59
+       ports: 
+         - "4444:4444"
+    chrome:
+       image: selenium/node-chrome:3.141.59
+       depends_on: 
+         - hub
+       environment:
+         - HUB_HOST=hub         
+    testng1:
+       image: shubhamit09/selenium-docker
+       depends_on: 
+         - chrome
+       environment:
+         - BROWSER=chrome
+         - HUB_HOST=hub
+         - MODUlLES=testng.xml
+       entrypoint: /bin/sh
+       working_dir: /usr/share/udemydir      
+       volumes:
+         - ./volumes:/usr/share/udemydir/test-output
+       
+ 
+    
+    
+           
