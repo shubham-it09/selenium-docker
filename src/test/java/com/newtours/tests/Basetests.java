@@ -33,9 +33,9 @@ public class Basetests {
         DesiredCapabilities dc = DesiredCapabilities.chrome();
         dc.setCapability(ChromeOptions.CAPABILITY, options);
         if(System.getProperty("BROWSER") !=null
-        && System.getProperty("BROWSER").equalsIgnoreCase("firefox"))
+        && System.getProperty("BROWSER").equalsIgnoreCase("chrome"))
         {
-            dc =DesiredCapabilities.firefox();
+            dc =DesiredCapabilities.chrome();
         }
 
         if(System.getProperty("HUB_HOST") != null)

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Book Flight1]" parallel="tests">
+  <test thread-count="4" name="Book flight3(failed)" parallel="tests">
+    <parameter name="noOfPass" value="3"/>
+    <classes>
+      <class name="com.newtours.tests.BookFlightTest">
+        <methods>
+          <include name="AddressDetailsPage"/>
+          <include name="FlightDetailsTest"/>
+          <include name="BookFLighttest"/>
+          <include name="RegistrationConfrimationTest"/>
+          <include name="FlightConfirmationtest"/>
+          <include name="RegistrationPageTest"/>
+          <include name="setUpDriver"/>
+          <include name="quirDriver"/>
+        </methods>
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </classes>
+  </test> <!-- Book flight3(failed) -->
+  <test thread-count="4" name="Book flight4(failed)" parallel="tests">
+    <parameter name="noOfPass" value="4"/>
+    <classes>
+      <class name="com.newtours.tests.BookFlightTest">
+        <methods>
+          <include name="AddressDetailsPage"/>
+          <include name="FlightDetailsTest"/>
+          <include name="BookFLighttest"/>
+          <include name="RegistrationConfrimationTest"/>
+          <include name="FlightConfirmationtest"/>
+          <include name="RegistrationPageTest"/>
+          <include name="setUpDriver"/>
+          <include name="quirDriver"/>
+        </methods>
+      </class> <!-- com.newtours.tests.BookFlightTest -->
+    </classes>
+  </test> <!-- Book flight4(failed) -->
+</suite> <!-- Failed suite [Book Flight1] -->
